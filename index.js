@@ -15,30 +15,62 @@ function checkPass(num1, num2, num3) {
 }
 
 function submit(){
-    switch (usernameInput.value){
-        case "3/3/2006":
-            if (checkPass(3,5,0)) {
-                window.open("./loichuc.html")
-            } else {
-                document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
-            }
-            break
-        case "4/3/2005":
-            if (checkPass(9,2,0)) {
-                window.open("./loichuc.html")
-            } else {
-                document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
-            }
-            break
-        case "9/3/2005":
-            if (checkPass(5,6,0)) {
-                window.open("./loichuc.html")
-            } else {
-                document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
-            }
-            break
+    if (usernameInput.value == "03/03/2006") {
+        if (checkPass(3,5,0)) {
+            window.open("./loichuc.html")
+        } else {
+            document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
+        }
+    } else if (usernameInput.value == "04/03/2005") {
+        if (checkPass(9,2,0)) {
+            window.open("./loichuc.html")
+        } else {
+            document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
+        }
+    } else if (usernameInput.value == "09/03/2005") {
+        if (checkPass(5,6,0)) {
+            window.open("./loichuc.html")
+        } else {
+            document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
+        }
+    } else if (usernameInput.value == "") {
+        document.getElementById("error2").innerHTML = "Chưa nhập ngày sinh mà đòi vào:))"
+    }else if (usernameInput.value !== "03/03/2006" && usernameInput.value !== "04/03/2006" && usernameInput.value !== "09/03/2006") {
+        document.getElementById("error2").innerHTML = "Chưa đến ngày sinh nhật của bạn đâu:))"
+    } 
+    else if (pass1.value == "" || pass2.value == "" || pass3.value == "") {
+        document.getElementById("error").innerHTML = "Chưa điền hết mật khẩu mà đòi vào:))"
+    } 
+
+
+
+
+    // switch (usernameInput.value){
+    //     case "03/03/2006":
+    //         if (checkPass(3,5,0)) {
+    //             window.open("./loichuc.html")
+    //         } else {
+    //             document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
+    //         }
+    //         break
+    //     case "04/03/2005":
+    //         if (checkPass(9,2,0)) {
+    //             window.open("./loichuc.html")
+    //         } else {
+    //             document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
+    //         }
+    //         break
+    //     case "09/03/2005":
+    //         if (checkPass(5,6,0)) {
+    //             window.open("./loichuc.html")
+    //         } else {
+    //             document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
+    //         }
+    //         break
+    //     case "":
+    //         document.getElementById("error2").innerHTML = "Chưa nhập ngày sinh mà đòi vào:))"
 }
-}
+
 
 
 
