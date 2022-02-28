@@ -22,12 +22,14 @@ function submit(){
             } else {
                 document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
             }
+            break
         case "4/3/2005":
             if (checkPass(9,2,0)) {
                 window.open("./loichuc.html")
             } else {
                 document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
             }
+            break
         case "9/3/2005":
             if (checkPass(5,6,0)) {
                 window.open("./loichuc.html")
