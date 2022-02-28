@@ -36,6 +36,7 @@ function submit(){
             } else {
                 document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
             }
+            break
 }
 }
 
