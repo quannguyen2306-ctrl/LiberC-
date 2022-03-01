@@ -11,18 +11,89 @@
 <body>
 
     <div class="container">
-        <div class="heading">
+        <!-- <embed src="./sound/horn.mp3" loop="true" autostart="true" width="2" -->
+        <!-- <audio src="./sound/horn.mp3" autoplay="" ></audio> -->
+        <!-- <iframe src="./sound/horn.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+        </iframe> 
+        <audio autoplay loop  id="playAudio">
+            <source src="./sound/horn.mp3">
+        </audio> -->
+        <audio id="musicplayer" controls="true"  oncanplay="$(this)[0].play()" style="display: none;">
+            <source src="/sound/party.mp3">
+          </audio>
+        <div id="heading">
             <img src="./image/happy.png" alt="">
+            
             <h2>04/03/2005</h2>
             <h2>Nguyễn Tấn Phúc</h2>
             <h3>Người anh em TCĐN</h3>
+            <!-- Here link the script file which you downloaded from the above link -->
+            
+            <!-- Our javascript code comes here -->
         </div>
         <div class="chuc">
+            <div class="birthday-gift">
+                <div class="gift">
+                <input id='click' type='checkbox' onclick="popAndAudio()">
+                <label class='click' for='click'></label>
+                <div class="wishes">Happy Birthday!</div>
+                     <div class="sparkles">
+                    <div class="spark1"></div>
+                    <div class="spark2"></div>
+                    <div class="spark3"></div>
+                    <div class="spark4"></div>
+                    <div class="spark5"></div>
+                    <div class="spark6"></div>
+                  </div>
+                  </div>
+              </div>
+        </div>
             <div class="loichuc">
-
-            </div>
+                
         </div>
     </div>
+    <script src="confetti.js"></script>
     <script src="./app.js"></script>
+    <script>
+        let audio = document.getElementById("musicplayer")
+
+
+
+        function playAudio() {
+            audio.play()
+        }
+
+        
+        // for starting the confetti 
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  for stopping the confetti 
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+// after this here we are calling both the function so it works
+        function popAndAudio() {
+            playAudio();
+            start();
+            stop();
+            document.getElementById("heading").style.display = "block"
+
+        }
+        
+
+// if you dont want to make it stop and make it infinite you can just remove the stop function 😊
+    </script>
+    <script src="./sound.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Physics2DPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script> -->
 </body>
 </html>
