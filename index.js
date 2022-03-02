@@ -16,19 +16,19 @@ function checkPass(num1, num2, num3) {
 
 function submit() {
     if (usernameInput.value == "03/03/2006") {
-        if (checkPass(3, 5, 0)) {
+        if (checkPass("3", "5", "0")) {
             window.open("./an.html")
         } else {
             document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
         }
     } else if (usernameInput.value == "04/03/2005") {
-        if (checkPass(5, 6, 0)) {
+        if (checkPass("5", "6", "0")) {
             window.open("./phuc.html")
         } else {
             document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"
         }
     } else if (usernameInput.value == "09/03/2005") {
-        if (checkPass(9, 2, 0)) {
+        if (checkPass("9", "2", "0")) {
             window.open("./thao.html")
         } else {
             document.getElementById("error").innerHTML = "Sai mật khẩu rồi! Ở ngoài đi bạn:))"

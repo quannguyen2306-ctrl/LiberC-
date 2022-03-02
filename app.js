@@ -35,6 +35,7 @@ function popAndAudio() {
         document.getElementById("heading").style.display = "block"
         document.getElementById("loichuc").style.display = "grid"
         document.getElementById("scroll").style.display = "block"
+        document.getElementById("footer").style.display = "block"
         condition = false
     }
     
