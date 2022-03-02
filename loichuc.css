@@ -13,10 +13,6 @@ body {
     justify-content: center;
 }
 
-p {
-    font-size: 4rem;
-    text-shadow: 0 0 10px;
-}
 
 .container {
     text-align: center;
@@ -247,4 +243,71 @@ p {
   #heading {
       display: none;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .loichuc {
+      margin-top: 100px;
+  }
+
+  .img-hb {
+      width: 280px;
+      border-radius: 15px 15px 15px 15px;
+      max-height: 250px;
+      width: auto;
+      max-width: 300px;
+      margin-top: 10px;
+      border: grey 1px solid;
+      
+      
+    
+      
+  }
+
+  .loichuc-item-img {
+      padding-top: 10px;
+  }
+  .loichuc-item {
+      background-color: #ff9999;
+      margin: 20px;
+      width: 300px;
+      height: 250px;
+      border-radius: 15px;
+  }
+
+  #loichuc {
+    display: none;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    margin-top: 100px;
+    position: absolute;
+    width: auto;
+    left: 207px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+  } 
+
+  .name {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: left;
+
+  }
+
+  .quote {
+    margin-left: 20px;
+    margin-top: 5px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+
+
+  #scroll {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: lightcoral;
+    padding-top: 50px;
+    display: none;
   }
