@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lời chúc cho Phúc</title>
+    <title>Chúc mừng bạn đã chiến thắng</title>
     <title>LiberC Events</title>
-    <link rel="stylesheet" href="./loichuc.css">
-    <link rel="icon" href="https://cdn-icons.flaticon.com/png/512/3146/premium/3146600.png?token=exp=1646027593~hmac=1674309ce64639d917a945e057f124af">
+    <link rel="stylesheet" href="./loichucphuc.css">
+    <link rel="icon"
+        href="https://cdn-icons.flaticon.com/png/512/3146/premium/3146600.png?token=exp=1646027593~hmac=1674309ce64639d917a945e057f124af">
 </head>
+
 <body>
 
     <div class="container">
@@ -18,76 +21,182 @@
         <audio autoplay loop  id="playAudio">
             <source src="./sound/horn.mp3">
         </audio> -->
-        <audio id="musicplayer" controls="true"  oncanplay="$(this)[0].play()" style="display: none;">
+        <audio id="musicplayer" controls="true" style="display: none;">
             <source src="/sound/party.mp3">
-          </audio>
+        </audio>
         <div id="heading">
             <img src="./image/happy.png" alt="">
-            
+
             <h2>04/03/2005</h2>
-            <h2>Nguyễn Tấn Phúc</h2>
+            <h2 style="color: #33bbff;">Nguyễn Tấn Phúc</h2>
             <h3>Người anh em TCĐN</h3>
             <!-- Here link the script file which you downloaded from the above link -->
-            
+
             <!-- Our javascript code comes here -->
+
         </div>
-        <div class="chuc">
-            <div class="birthday-gift">
-                <div class="gift">
+        <div class="birthday-gift">
+            <div class="gift">
                 <input id='click' type='checkbox' onclick="popAndAudio()">
                 <label class='click' for='click'></label>
                 <div class="wishes">Happy Birthday!</div>
-                     <div class="sparkles">
+                <div class="sparkles">
                     <div class="spark1"></div>
                     <div class="spark2"></div>
                     <div class="spark3"></div>
                     <div class="spark4"></div>
                     <div class="spark5"></div>
                     <div class="spark6"></div>
-                  </div>
-                  </div>
-              </div>
+                </div>
+            </div>
+
         </div>
-            <div class="loichuc">
+        <h3 id="scroll">Kéo xuống để xem món quà đặc biệt</h3>
+
+        <div class="chuc">
+            <div id="loichuc">
+                <div class="loichuc-item-img">
+
+                    <img class="img-hb"
+                        src="https://media0.giphy.com/media/sdy0hS4D6tiYPNLJPU/giphy.gif" alt="">
+                </div>
+                <div class="loichuc-item">
+                    <h4 class="name">Đoán xem là ai</h4>
+                    <p class="quote">Chúc tóc bớt xoăn, bớt khùng. Chúc mừng năm mới </p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+                <div class="loichuc-item-img">
+                    <!-- <h4 class="name">Một người nào đó trong LiberC</h4>
+                <p class="quote">Sinh nhật vui vẻ. Tuổi mới lớn hơn tuổi cũ.</p> -->
+                    <img class="img-hb"
+                        src="https://scontent.xx.fbcdn.net/v/t1.15752-9/273927924_3170670639844900_2377974786685818655_n.png?_nc_cat=110&ccb=1-5&_nc_sid=aee45a&_nc_ohc=wIt0KZKRUQwAX-dYRqZ&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJOJNiTKRzHbPkEctKfdbuGPIC8nV4RD6Mn2UtGBFQ3iQ&oe=62426EE7"
+                        alt="">
+                </div>
+                <div class="loichuc-item">
+                    <h4 class="name">Cindy xinh đệp</h4>
+                    <p class="quote">Happy birthday ! Wish u all the best. 
+                    </p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
                 
+                <div class="loichuc-item">
+                    <h4 class="name">Một người nào đó trong LiberC</h4>
+                    <p class="quote">Sinh nhật vui vẻ, tuổi mới lớn hơn tuổi cũ!</p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+                <div class="loichuc-item-img">
+                    <!-- <h4 class="name">Một người nào đó trong LiberC</h4>
+                <p class="quote">Sinh nhật vui vẻ. Tuổi mới lớn hơn tuổi cũ.</p> -->
+                    <img class="img-hb"
+                        src="https://scontent.xx.fbcdn.net/v/t1.15752-9/274174947_512833730472307_31054013092712655_n.png?_nc_cat=100&ccb=1-5&_nc_sid=aee45a&_nc_ohc=OHzi4V191SoAX--T4aL&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVIt7HSvL0o3JnVTYtTrU7nbr63hFwqjVb6sgS3FarqGJg&oe=62435B3F"
+                        alt="">
+                </div>
+
+                <div class="loichuc-item">
+                    <h4 class="name">Đoán xem là ai</h4>
+                    <p class="quote">Chúc khỏe, chúc dzui </p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+                <div class="loichuc-item-img">
+                    <!-- <h4 class="name">Bạn của Cindy Ngờ</h4>
+                <p class="quote">Chúc công chúa tuổi 17 luôn luôn xinh đẹp, luôn luôn tươi cười và luôn luôn hạnh phúc nhé </p> -->
+                    <img class="img-hb" src="https://media2.giphy.com/media/Be9nOh8wsow8Kvt8Jx/giphy.gif"
+                        alt="">
+                </div>
+                <div class="loichuc-item-img">
+
+                    <img class="img-hb"
+                        src="https://c.tenor.com/yZ1HymJa2c4AAAAC/angry-birds-pig.gif" alt="">
+                </div>
+                <div class="loichuc-item">
+                    <h4 class="name">minhcow</h4>
+                    <p class="quote">Aiya, sắp tới là sinh nhật của vị huynh đài này đó hả. Chúc mừng sinh nhật đó mà. Chúc Phúc khùng sinh nhật dzui dẻ, vạn sự như ý, tỷ sự như mơ, triệu điều bất ngờ, trăm điều hạnh phúc nha. Tuổi 17 bẻ gãy sừng trâu đó mờ 😌</p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+                <div class="loichuc-item-img">
+                    <!-- <h4 class="name">Bạn của Cindy Ngờ</h4>
+                <p class="quote">Chúc công chúa tuổi 17 luôn luôn xinh đẹp, luôn luôn tươi cười và luôn luôn hạnh phúc nhé </p> -->
+                    <img class="img-hb"
+                        src="https://c8p9p3e5.rocketcdn.me/wp-content/uploads/2021/08/happy-birthday-meme-dog-lover.jpg"
+                        alt="">
+                </div>
+                <div class="loichuc-item">
+                    <h4 class="name">Trùm yang hồ Mai Vương</h4>
+                    <p class="quote">Chúc hết bệnh, sống lâu trăm tuổi!
+
+                    </p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+                <div class="loichuc-item">
+                    <h4 class="name">Bestie học Tón cần người chở</h4>
+                    <p class="quote">Chúc m tuổi mới sẽ có quả đầu thẳng hơn, đi học Toán với t chăm hơn. Mong tuổi mới m sẽ có thêm nhiều cơ hội quý báu để chở t đi vi vu hơn :> Tiếp tục viết những bài nhạc hay và làm những điều m thích nha bestie :)
+
+                    </p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+                <div class="loichuc-item-img">
+
+                    <img class="img-hb" src="https://i.pinimg.com/originals/f6/48/5e/f6485e5f319ba1c68c04a1c81bdf46cd.gif"
+                        alt="">
+                </div>
+                <div class="loichuc-item">
+                    <h4 class="name">Anh của lilpuc</h4>
+                    <p class="quote">Chúc thg đệ tuổi mới mau ăn chóng lớn, mau lau debut để a mày còn có cái khoe chứ hở. A đi show chỉ quen ngồi ghế đầu nên nhớ cbi. Chúc thg đệ snvv
+                    </p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+                <div class="loichuc-item-img">
+
+                    <img class="img-hb"
+                        src="https://cdna.artstation.com/p/assets/images/images/033/178/050/original/nabila-miah-happy-birthday-gif.gif?1608659834" alt="">
+                </div>
+                <div class="loichuc-item-img">
+
+                    <img class="img-hb"
+                        src="https://i.pinimg.com/474x/4b/d5/84/4bd58425d7e54dfe8c4934da28fe8a26--funny-happy-birthday-quotes-funny-happy-birthdays.jpg" alt="">
+                </div>
+                
+                
+                
+                <div class="loichuc-item">
+                    <h4 class="name">Đoán xem là ai</h4>
+                    <p class="quote">Mừng sinh nhật, chúc 17t hạnh phúc, thành công với đam mê, sau này nổi tiếng đừng quên t, nhớ khao t số chầu bằng với số tiền trong tk của m. Vậy nha
+
+                    </p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+                <div class="loichuc-item-img">
+
+                    <img class="img-hb"
+                        src="https://c.tenor.com/kJgcxHCh-QEAAAAM/we-bare-bears-happy.gif" alt="">
+                </div>
+                <div class="loichuc-item">
+                    <h4 class="name">tvii</h4>
+                    <p class="quote">Chúc lilpuc tuổi mới thật nhiều niềm vui và chúc nhảy hiphop nhiều lên!
+                    </p>
+                    <!-- <img class="img-hb" src="https://c.tenor.com/WWKu06Gnp4wAAAAC/happy-birthday-to-you-minions.gif" alt=""> -->
+                </div>
+
+
+
+
+
+            </div>
         </div>
     </div>
+    <!-- <div id="footer">
+        <p>By LiberC Team</p>
+        <p>For An, Phuc and Thao</p>
+    </div> -->
+    </div>
+    <!-- <div class="footer">
+        <p>By LiberC Team</p>
+    </div> -->
     <script src="confetti.js"></script>
     <script src="./app.js"></script>
     <script>
-        let audio = document.getElementById("musicplayer")
 
 
-
-        function playAudio() {
-            audio.play()
-        }
-
-        
-        // for starting the confetti 
-
-        const start = () => {
-            setTimeout(function() {
-                confetti.start()
-            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
-        };
-
-        //  for stopping the confetti 
-
-        const stop = () => {
-            setTimeout(function() {
-                confetti.stop()
-            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
-        };
-// after this here we are calling both the function so it works
-        function popAndAudio() {
-            playAudio();
-            start();
-            stop();
-            document.getElementById("heading").style.display = "block"
-
-        }
-        
 
 // if you dont want to make it stop and make it infinite you can just remove the stop function 😊
     </script>
@@ -96,4 +205,5 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/Physics2DPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script> -->
 </body>
+
 </html>
